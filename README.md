@@ -7,7 +7,7 @@ Nunjucks extension that brings a "filter" tag
 ### How to install it?
 
 ```
-$ npm install nunjucks-autoescape
+$ npm install nunjucks-filter
 ```
 
 ### How to use it?
