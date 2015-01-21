@@ -15,7 +15,7 @@ $ npm install nunjucks-filter
 ```js
 var FilterExtension = require("nunjucks-filter");
 
-env.addExtension('FilterExtension', new FilterExtension());
+env.addExtension('FilterExtension', new FilterExtension(env));
 ```
 
 
