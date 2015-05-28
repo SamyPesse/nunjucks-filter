@@ -4,9 +4,6 @@
     "homepage": "https://github.com/SamyPesse/nunjucks-filter",
     "description": "Nunjucks extension that brings a 'filter' tag",
     "main": "index.js",
-    "dependencies": {
-        "nunjucks": "*"
-    },
     "repository": {
         "type": "git",
         "url": "https://github.com/SamyPesse/nunjucks-filter.git"

@@ -13,7 +13,7 @@ $ npm install nunjucks-filter
 ### How to use it?
 
 ```js
-var FilterExtension = require("nunjucks-filter");
+var FilterExtension = require("nunjucks-filter")(nunjucks);
 
 env.addExtension('FilterExtension', new FilterExtension(env));
 ```
