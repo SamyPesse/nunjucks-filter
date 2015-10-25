@@ -1,6 +1,8 @@
-module.exports = function(nunjucks) {
+module.exports = function(nunjucks, opts) {
+    opts = opts || { start: 'applyFilter', end: 'endApplyFilter' };
+
     return function FilterExtension(_env) {
-        this.tags = ['filter'];
+        this.tags = [name || opts.start];
 
         this.parse = function(parser, nodes, lexer) {
             // get the tag token
@@ -12,7 +14,7 @@ module.exports = function(nunjucks) {
             parser.advanceAfterBlockEnd(tok.value);
 
             // parse the body and possibly the error block, which is optional
-            var body = parser.parseUntilBlocks('endfilter');
+            var body = parser.parseUntilBlocks(opts.end);
 
             parser.advanceAfterBlockEnd();
 

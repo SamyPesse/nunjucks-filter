@@ -20,9 +20,9 @@ env.addExtension('FilterExtension', new FilterExtension(env));
 
 
 ```html
-{% filter "replace" "." "!" %}
+{% applyFilter "replace" "." "!" %}
 Hi. My name is Paul.
-{% endfilter %}
+{% endApplyFilter %}
 
 // => Hi! My name is Paul!
 ```
