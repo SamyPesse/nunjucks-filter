@@ -2,7 +2,7 @@ module.exports = function(nunjucks, opts) {
     opts = opts || { start: 'applyFilter', end: 'endApplyFilter' };
 
     return function FilterExtension(_env) {
-        this.tags = [name || opts.start];
+        this.tags = [opts.start];
 
         this.parse = function(parser, nodes, lexer) {
             // get the tag token
